@@ -42,6 +42,9 @@ Lita.configure do |config|
     'U08FDUMEZ', # caribou
   ]
   config.adapters.slack.token = ENV['HOUSEBOT_SLACK_TOKEN']
+
+  config.handlers.meme.username = 'flashpoint'
+  config.handlers.meme.password =  ENV['FLASHPOINT_OBVIOUS_PASSWORD']
 end
 
 HANDLER_DIR = File.join(File.dirname(__FILE__), 'handlers')
