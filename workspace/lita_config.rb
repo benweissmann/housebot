@@ -43,3 +43,8 @@ Lita.configure do |config|
   ]
   config.adapters.slack.token = ENV['HOUSEBOT_SLACK_TOKEN']
 end
+
+HANDLER_DIR = File.join(File.dirname(__FILE__), 'handlers')
+Dir[File.join(HANDLER_DIR, "*.rb")].each do |f|
+  require f
+end
