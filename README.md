@@ -1,6 +1,6 @@
-# Lita development environment
+# Housebot
 
-This repository provides Lita users with a complete development environment for trying out Lita and developing Lita plugins.
+The Flashpoint Housebot
 
 ## Quick start
 
@@ -16,31 +16,12 @@ After the last step, you will be dropped into a shell in a Debian system inside 
 
 ## Next steps
 
-If you want to run Lita, first generate a new project with:
+To run Lita:
 
-``` bash
-lita new .
-```
+    HOUSEBOT_SLACK_TOKEN='<token>' lita
 
-This will generate a new Lita project in the workspace directory. Then start Lita with:
-
-``` bash
-lita
-```
-
-If you want to develop a plugin, run one of the following commands:
-
-``` bash
-lita adapter NEW_ADAPTER_NAME
-lita handler NEW_HANDLER_NAME
-lita extension NEW_EXTENSION_NAME
-```
-
-The capitalized phrase should be replaced with the name you want to give your plugin.
-
-## Documentation
-
-For complete documentation on installing and using the development environment, please visit [Installation](http://docs.lita.io/getting-started/installation/) on the Lita documentation site.
+To add a handler, just create a `.rb` file in the `handlers` directory. It will
+automatically be loaded.
 
 ## License
 
