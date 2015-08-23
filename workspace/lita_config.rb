@@ -45,6 +45,9 @@ Lita.configure do |config|
 
   config.handlers.meme.username = 'flashpoint'
   config.handlers.meme.password =  ENV['FLASHPOINT_OBVIOUS_PASSWORD']
+
+  config.handlers.hue.nodejs_color_lookup = true
+  config.handlers.hue.nodejs_invocation = "NODE_PATH=$(npm -g root) /usr/bin/nodejs"
 end
 
 HANDLER_DIR = File.join(File.dirname(__FILE__), 'handlers')
