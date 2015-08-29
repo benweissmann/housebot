@@ -7,6 +7,9 @@ gem "lita-slack"
 gem "lita-meme"
 gem "lita-hue", github: 'donaldguy/lita-hue'
 
+gem "plex-ruby"
+gem "fuzzy_match"
+
 # Uncomment to use the HipChat adapter
 # gem "lita-hipchat"
 

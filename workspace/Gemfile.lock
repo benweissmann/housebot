@@ -19,6 +19,7 @@ GEM
     faye-websocket (0.10.0)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
+    fuzzy_match (2.1.0)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -47,8 +48,13 @@ GEM
       faye-websocket (>= 0.8.0)
       lita (>= 4.4.2)
       multi_json
+    mini_portile (0.6.2)
     multi_json (1.11.2)
     multipart-post (2.0.0)
+    nokogiri (1.6.6.2)
+      mini_portile (~> 0.6.0)
+    plex-ruby (1.5.3)
+      nokogiri
     puma (2.13.4)
     rack (1.6.4)
     rb-readline (0.5.3)
@@ -66,10 +72,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  fuzzy_match
   lita
   lita-hue!
   lita-meme
   lita-slack
-
-BUNDLED WITH
-   1.10.6
+  plex-ruby
