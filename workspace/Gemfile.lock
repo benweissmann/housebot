@@ -13,10 +13,10 @@ GEM
     color (1.7.1)
     css_color (1.0.1)
       color
-    eventmachine (1.0.8)
+    eventmachine (1.2.7)
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
-    faye-websocket (0.10.0)
+    faye-websocket (0.11.0)
       eventmachine (>= 0.12.0)
       websocket-driver (>= 0.5.1)
     fuzzy_match (2.1.0)
@@ -66,9 +66,9 @@ GEM
     thor (0.19.1)
     url_mount (0.2.1)
       rack
-    websocket-driver (0.6.2)
+    websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.2)
+    websocket-extensions (0.1.5)
 
 PLATFORMS
   ruby
